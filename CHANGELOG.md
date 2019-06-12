@@ -1,3 +1,9 @@
+1.1.1
+=====
+
+*   Fixed an invalid internal path.
+
+
 1.1.0
 =====
 
