@@ -10,10 +10,6 @@ trait IdSuffixSlugEntityTrait
 {
     /**
      * Generates an ID suffixed slug with an optional prefix.
-     *
-     * @param string|null $prefix
-     *
-     * @return string
      */
     private function generateIdSlug (?string $prefix = null) : string
     {

@@ -39,9 +39,7 @@ class SlugGenerator
 
 
     /**
-     * @param string $input
      *
-     * @return string
      */
     public function generate (string $input) : string
     {
@@ -56,9 +54,7 @@ class SlugGenerator
 
 
     /**
-     * @param string $input
      *
-     * @return string
      */
     private function sanitize (string $input) : string
     {
