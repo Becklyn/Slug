@@ -1,10 +1,6 @@
 language: php
 sudo: false
 
-cache:
-    directories:
-        - $HOME/.composer/cache/files
-
 git:
     depth: 1
 
@@ -13,11 +9,12 @@ php:
     - 7.3
 
 before_install:
-    - composer require php-coveralls/php-coveralls --prefer-dist --no-interaction --no-progress
-    - composer global require localheinz/composer-normalize --prefer-dist --no-interaction --no-progress
+    - composer require php-coveralls/php-coveralls
+    - composer global require localheinz/composer-normalize --no-interaction --prefer-dist --no-progress
+    - composer self-update --stable
 
 install:
-    - composer install --prefer-dist --no-interaction --no-progress
+    - composer install
 
 script:
     - mkdir -p build/logs
