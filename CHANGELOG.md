@@ -1,3 +1,9 @@
+1.2.0
+=====
+
+*   (feature) Add `SlugGenerator::generateUnique()`.
+
+
 1.1.2
 =====
 
