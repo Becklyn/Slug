@@ -71,4 +71,23 @@ class SlugGenerator
             "-"
         );
     }
+
+
+    /**
+     * Generates a unique slug. Will add `-2`, `-3`, etc.. to the slug if there is a collision.
+     * The callback gets the generated slug and must decide on whether the slug already exists.
+     */
+    public function generateUnique (string $input, callable $exists) : string
+    {
+        $counter = 0;
+
+        do
+        {
+            ++$counter;
+            $slug = $this->generate($input . ($counter > 1 ? "-{$counter}" : ""));
+        }
+        while ($exists($slug));
+
+        return $slug;
+    }
 }

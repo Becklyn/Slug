@@ -32,4 +32,39 @@ class SlugGeneratorTest extends TestCase
         $slug = new SlugGenerator();
         self::assertSame($expected, $slug->generate($text));
     }
+
+
+    /**
+     */
+    public function provideGenerateUnique () : \Generator
+    {
+        yield ["Some text here", [], "some-text-here"];
+        yield ["Some text here", [
+            "some-text-here",
+        ], "some-text-here-2"];
+        yield ["Some text here", [
+            "some-text-here",
+            "some-text-here-2",
+            "some-text-here-3",
+            "some-text-here-4",
+        ], "some-text-here-5"];
+        yield ["Some text here", [
+            "some-other",
+        ], "some-text-here"];
+    }
+
+
+    /**
+     * @dataProvider provideGenerateUnique
+     */
+    public function testGenerateUnique (string $text, array $existing, string $expected) : void
+    {
+        $slug = new SlugGenerator();
+        $exists = function (string $slug) use ($existing)
+        {
+            return \in_array($slug, $existing, true);
+        };
+
+        self::assertSame($expected, $slug->generateUnique($text, $exists));
+    }
 }
