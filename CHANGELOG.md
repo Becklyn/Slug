@@ -1,3 +1,10 @@
+1.1.2
+=====
+
+*   (improvement) Allow Symfony 5.
+*   (internal) Update bundle structure + clean up.
+
+
 1.1.1
 =====
 
