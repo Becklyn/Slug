@@ -5,3 +5,4 @@ services:
 
     Becklyn\Slug\:
         resource: '../../*'
+        exclude: '../../{Exception,BecklynSlugBundle.php}'

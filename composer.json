@@ -12,15 +12,22 @@
     ],
     "require": {
         "php": "^7.2",
-        "symfony/config": "^4.3",
-        "symfony/dependency-injection": "^4.3",
-        "symfony/http-kernel": "^4.3"
+        "symfony/config": "^4.3 || ^5.0",
+        "symfony/dependency-injection": "^4.3 || ^5.0",
+        "symfony/http-kernel": "^4.3 || ^5.0"
     },
     "require-dev": {
-        "becklyn/php-cs": "^1.1"
+        "roave/security-advisories": "dev-master",
+        "symfony/phpunit-bridge": "^5.0"
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev",
+            "dev-next": "1.x-dev"
+        }
     },
     "autoload": {
         "psr-4": {

@@ -8,10 +8,6 @@ trait IdSuffixSlugControllerTrait
 {
     /**
      * Matches an ID automatically from a prefixed slug.
-     *
-     * @param string $slug
-     *
-     * @return int
      */
     private function matchIdFromSlug (string $slug) : int
     {
