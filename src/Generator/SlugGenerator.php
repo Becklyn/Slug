@@ -32,6 +32,7 @@ class SlugGenerator
             '/ü/u' => "ue",
             '/[úûù]/u' => "u",
             '/ß/u' => "ss",
+            '/[éêè]/u' => "e",
         ];
         $this->patterns = \array_keys($transforms);
         $this->replacements = \array_values($transforms);
