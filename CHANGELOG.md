@@ -1,3 +1,9 @@
+1.2.1
+=====
+
+*   (bug) Properly generate slugs for strings that contain `e` characters with accents.
+
+
 1.2.0
 =====
 
