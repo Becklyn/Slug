@@ -1,3 +1,10 @@
+1.2.2
+=====
+
+*   (bug) Also sanitize `._~(),;!` chars in url by replacing them with a `-` char.
+*   (bug) Require `ext-mbstring`.
+
+
 1.2.1
 =====
 

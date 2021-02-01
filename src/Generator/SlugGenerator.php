@@ -4,7 +4,7 @@ namespace Becklyn\Slug\Generator;
 
 class SlugGenerator
 {
-    private const SANITIZE_PATTERN = '/[^a-z0-9\\-]/';
+    private const SANITIZE_PATTERN = '/[^a-z0-9\\-._~(),;!]/u';
 
 
     /**
