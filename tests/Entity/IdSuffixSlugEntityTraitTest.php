@@ -50,6 +50,6 @@ class IdSuffixSlugEntityTraitTest extends TestCase
     public function testPrefixedSlug () : void
     {
         $entity = new PrefixedSlugEntity();
-        self::assertSame("this-is-my-prefix-11", $entity->getSlug());
+        self::assertSame("this-is-my-prefix!-11", $entity->getSlug());
     }
 }

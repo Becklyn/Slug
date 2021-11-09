@@ -17,7 +17,7 @@ trait IdSuffixSlugEntityTrait
         {
             throw new IdPropertyNotFoundException(\sprintf(
                 "Could not generate slug for entity of type '%s', as no 'id' property was found.",
-                \get_class($this)
+                static::class
             ));
         }
 
@@ -27,7 +27,7 @@ trait IdSuffixSlugEntityTrait
         {
             throw new InvalidIdException(\sprintf(
                 "Could not generate slug for entity of type '%s', as the id of this entity is null.",
-                \get_class($this)
+                static::class
             ));
         }
 

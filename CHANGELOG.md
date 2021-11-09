@@ -1,3 +1,12 @@
+1.2.3
+=====
+
+*   (internal) Update dependencies. 
+*   (internal) Raise minimum supported PHP version to 7.4
+*   (improvement) add support for PHP 8 and later. 
+*   (internal) Replace TravisCI with GitHub Actions. 
+
+
 1.2.2
 =====
 
