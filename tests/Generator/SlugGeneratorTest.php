@@ -15,7 +15,7 @@ class SlugGeneratorTest extends TestCase
         return [
             ["Some text here", "some-text-here"],
             ["Space at the end ", "space-at-the-end"],
-            ["here- and there.", "here-and-there"],
+            ["here- and there.", "here-and-there."],
             ["äöüÄÖÜß", "aeoeueaeoeuess"],
         ];
     }
