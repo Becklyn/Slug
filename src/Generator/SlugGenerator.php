@@ -6,22 +6,10 @@ class SlugGenerator
 {
     private const SANITIZE_PATTERN = '/[^a-z0-9\\-._~(),;!]/u';
 
-
-    /**
-     * @var array
-     */
-    private $patterns;
+    private array $patterns;
+    private array $replacements;
 
 
-    /**
-     * @var array
-     */
-    private $replacements;
-
-
-    /**
-     *
-     */
     public function __construct ()
     {
         $transforms = [
@@ -39,9 +27,6 @@ class SlugGenerator
     }
 
 
-    /**
-     *
-     */
     public function generate (string $input) : string
     {
         return $this->sanitize(
@@ -54,9 +39,6 @@ class SlugGenerator
     }
 
 
-    /**
-     *
-     */
     private function sanitize (string $input) : string
     {
         $transforms = [
@@ -75,7 +57,7 @@ class SlugGenerator
 
 
     /**
-     * Generates a unique slug. Will add `-2`, `-3`, etc.. to the slug if there is a collision.
+     * Generates a unique slug. Will add `-2`, `-3`, etc. to the slug if there is a collision.
      * The callback gets the generated slug and must decide on whether the slug already exists.
      */
     public function generateUnique (string $input, callable $exists) : string
