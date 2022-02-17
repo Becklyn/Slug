@@ -1,15 +1,15 @@
 {
     "name": "becklyn/slug",
-    "type": "symfony-bundle",
     "description": "Everything about slugs for Symfony.",
-    "homepage": "https://github.com/Becklyn/Slug",
     "license": "BSD-3-Clause",
+    "type": "symfony-bundle",
     "authors": [
         {
             "name": "Becklyn Studios",
             "homepage": "http://becklyn.com/"
         }
     ],
+    "homepage": "https://github.com/Becklyn/Slug",
     "require": {
         "php": ">=7.4",
         "ext-mbstring": "*",
@@ -21,15 +21,6 @@
         "roave/security-advisories": "dev-master",
         "symfony/phpunit-bridge": "^v5.4.3 || ^v6.0.3"
     },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev",
-            "dev-next": "1.x-dev"
-        }
-    },
     "autoload": {
         "psr-4": {
             "Becklyn\\Slug\\": "src/"
@@ -38,6 +29,15 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\Becklyn\\Slug\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev",
+            "dev-next": "1.x-dev"
         }
     }
 }
