@@ -13,13 +13,13 @@
     "require": {
         "php": ">=7.4",
         "ext-mbstring": "*",
-        "symfony/config": "^4.4 || ^5.4",
-        "symfony/dependency-injection": "^4.4 || ^5.4",
-        "symfony/http-kernel": "^4.4 || ^5.4"
+        "symfony/config": "^v5.4.3 || ^v6.0.3",
+        "symfony/dependency-injection": "^v5.4.3 || ^v6.0.3",
+        "symfony/http-kernel": "^v5.4.3 || ^v6.0.3"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "symfony/phpunit-bridge": "^5.0"
+        "symfony/phpunit-bridge": "^v5.4.3 || ^v6.0.3"
     },
     "config": {
         "sort-packages": true
